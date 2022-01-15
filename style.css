@@ -67,7 +67,7 @@ nav li{
     height: 44px;
 }
 .top-banner:hover h1{
-    animation: waviy 1s ;
+    animation: waviy 1s infinite;
 }
 /* brands logo style  */
 
@@ -99,7 +99,8 @@ nav li{
 .product {
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);    
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    transition: .5s;    
 }
 .product-title{
     margin-bottom: 0px;
@@ -118,6 +119,46 @@ nav li{
     float: right;
     margin-right: 15%;
 }
+.product:hover{
+    transform: scale(1.1);
+}
+
+/* newsletter style  */
+form {
+    border: 4px solid #f1f1f1;
+    margin-top: 100px;
+    margin-left: 15%;
+    margin-right: 15%;
+  } 
+  .container {
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+    
+
+/* footer area style  */
 footer{
     background-color: #0A0826;
     color: white;
@@ -170,6 +211,27 @@ footer{
         grid-template-columns: repeat(1,1fr);
     }
     .button{
-        padding: 10px,12px;
+        font-size: 12px;
+    }
+}
+
+/* Tablet Devices */
+@media Only screen and (min-width:689px) and (max-width:992px) {
+    nav{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+    .flexible-container{
+        flex-direction: column-reverse;
+    }
+    .flexible-container img{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .brands{
+        flex-direction: column;
+        width: 15%;
+        flex-wrap: wrap;
     }
 }
