@@ -1,17 +1,35 @@
+
 /* common style  */
+
+
 body{
     font-family: 'Poppins', sans-serif;
     padding: 80px 10%;
+    background-color:#FFFFFF;
 }
+h1{
+    font-size: 52px;
+    margin-top: 145px;
+    margin-bottom: 0px;
+}
+h2{
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    margin: 32px 0px;
+}
+
 /* navbar style  */
+
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.name{
-    font-size: 24px;
-    font-weight: 700;
 }
 nav ul{
     display: flex;
@@ -22,7 +40,29 @@ nav li{
     font-size: 16px;
     font-weight: 600;
 }
-nav li a{
-    text-decoration: none;
-    color: black;
+
+
+/* top banner style  */
+
+.flexible-container{
+    display: flex;
+    align-items: center;
+}
+.half-width{
+    width: 50%;
+}
+.half-width img{
+    width: 60%;
+    padding-left: 30%;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 60%;
+}
+.button{
+    color: white;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    border-radius: 41px;
+    height: 44px;
 }
