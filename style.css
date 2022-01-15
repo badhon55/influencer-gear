@@ -66,3 +66,16 @@ nav li{
     border-radius: 41px;
     height: 44px;
 }
+/* brands logo style  */
+
+.brands{
+    margin: 100px 0px;
+    justify-content: center;
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+    border-image: linear-gradient(to right,#C0CCDA 10%,#C0CCDA 60%,#C0CCDA 10%);
+    border-image-slice: 1;
+}
+.brands img{
+    padding: 35px;    
+}
