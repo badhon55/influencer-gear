@@ -66,6 +66,9 @@ nav li{
     border-radius: 41px;
     height: 44px;
 }
+.top-banner:hover h1{
+    animation: waviy 1s ;
+}
 /* brands logo style  */
 
 .brands{
@@ -109,4 +112,64 @@ nav li{
     color: #787885;
     font-size: 14px ;
     margin-bottom: 0px;
+}
+.see{
+    color:#E02C6D;
+    float: right;
+    margin-right: 15%;
+}
+footer{
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: -13%;
+    margin-left: -13.5%;
+    margin-bottom: -13%;
+}
+.social-icon{
+    padding: 10px;
+    font-size: 20px;
+}
+
+@keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
+
+/* -----------------
+    Media Queries 
+-------------------*/
+
+/* Mobile Devices */
+
+@media only screen and (max-width:688px) {
+    nav{
+        width: 100%;
+        flex-direction: column;
+        align-content: center;
+    }
+    .flexible-container{
+        flex-direction: column-reverse;
+    }
+    .flexible-container img{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .brands{
+        flex-direction: row;
+        width: 40%;
+        flex-wrap: wrap;
+    }
+    .products{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .button{
+        padding: 10px,12px;
+    }
 }
