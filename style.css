@@ -1,0 +1,28 @@
+/* common style  */
+body{
+    font-family: 'Poppins', sans-serif;
+    padding: 80px 10%;
+}
+/* navbar style  */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    font-size: 24px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 34px;
+    font-size: 16px;
+    font-weight: 600;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
